@@ -39,4 +39,5 @@ Revamp of website www.theolternative.com
 ## Current Apps
 * **Livesick** — slug: `livesick`, App Store ID: `id1635028224`
 * **Steel Profiles AISC** — slug: `steel-profiles-aisc`, App Store ID: `id662511256`
-* **Steel Profiles Free** — slug: `steel-profiles-free`, App Store ID: `id564614324`
+* **Steel Profiles** (formerly Steel Profiles Free) — slug: `steel-profiles-free`, App Store ID: `id564614324`
+* **WiFiPhoto** — slug: `wifiphoto`, App Store ID: `id328578837`
