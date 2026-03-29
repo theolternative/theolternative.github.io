@@ -16,7 +16,7 @@ class SiteHeader extends HTMLElement {
               <circle cx="10" cy="46" r="2.5" fill="#185FA5"/>
               <circle cx="36" cy="46" r="2.5" fill="#85B7EB"/>
             </svg>
-            <span class="brand-bold">theo</span><span class="brand-light">lternative</span>
+            <span><span class="brand-bold">theo</span><span class="brand-light">lternative</span></span>
           </a>
           <nav>
             <a href="/"${current === "home" ? ' aria-current="page"' : ""}>Home</a>
