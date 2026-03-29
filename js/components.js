@@ -7,7 +7,17 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
       <header class="site-header">
         <div class="container">
-          <a href="/" class="brand">theolternative</a>
+          <a href="/" class="brand">
+            <svg width="22" height="26" viewBox="0 0 46 50" fill="none">
+              <line x1="6" y1="11" x2="40" y2="11" stroke="#378ADD" stroke-width="4" stroke-linecap="round"/>
+              <line x1="23" y1="11" x2="23" y2="31" stroke="#378ADD" stroke-width="4" stroke-linecap="round"/>
+              <line x1="23" y1="31" x2="10" y2="46" stroke="#185FA5" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="23" y1="31" x2="36" y2="46" stroke="#85B7EB" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="10" cy="46" r="2.5" fill="#185FA5"/>
+              <circle cx="36" cy="46" r="2.5" fill="#85B7EB"/>
+            </svg>
+            <span class="brand-bold">theo</span><span class="brand-light">lternative</span>
+          </a>
           <nav>
             <a href="/"${current === "home" ? ' aria-current="page"' : ""}>Home</a>
             <a href="/about/"${current === "about" ? ' aria-current="page"' : ""}>About</a>
@@ -28,7 +38,18 @@ class SiteFooter extends HTMLElement {
     this.innerHTML = `
       <footer class="site-footer">
         <div class="container">
-          <span class="copyright">&copy; ${year} theolternative. All rights reserved.</span>
+          <div>
+            <div class="footer-brand">
+              <svg width="18" height="21" viewBox="0 0 46 50" fill="none">
+                <line x1="6" y1="11" x2="40" y2="11" stroke="#378ADD" stroke-width="4" stroke-linecap="round"/>
+                <line x1="23" y1="11" x2="23" y2="31" stroke="#378ADD" stroke-width="4" stroke-linecap="round"/>
+                <line x1="23" y1="31" x2="10" y2="46" stroke="#185FA5" stroke-width="3.5" stroke-linecap="round"/>
+                <line x1="23" y1="31" x2="36" y2="46" stroke="#85B7EB" stroke-width="3.5" stroke-linecap="round"/>
+              </svg>
+              <span><span class="footer-brand-bold">theo</span><span class="footer-brand-light">lternative</span></span>
+            </div>
+            <span class="copyright">&copy; ${year} theolternative. All rights reserved.</span>
+          </div>
           <nav>
             <a href="/">Home</a>
             <a href="/about/">About</a>

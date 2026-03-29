@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#FFFFFF">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://theolternative.com/">
   <meta property="og:title" content="theolternative — iOS Apps">
@@ -28,11 +28,15 @@
     "@type": "Organization",
     "name": "theolternative",
     "url": "https://theolternative.com",
+    "description": "Independent software studio building native iOS, iPadOS and Mac apps. Practical, well-crafted tools available on the App Store.",
     "logo": "https://theolternative.com/images/icon-512.png",
     "founder": {
       "@type": "Person",
       "name": "Matteo Rossi"
-    }
+    },
+    "sameAs": [
+      "https://apps.apple.com/developer/matteo-rossi/id328578840"
+    ]
   }
   </script>
 </head>
@@ -42,7 +46,16 @@
   <main>
     <section class="hero hero-gradient">
       <div class="container">
-        <h1>theolternative</h1>
+        <h1 class="hero-logo">
+          <svg width="46" height="50" viewBox="0 0 46 50" fill="none" role="img" aria-label="theolternative">
+            <line x1="6" y1="11" x2="40" y2="11" stroke="#85B7EB" stroke-width="4" stroke-linecap="round"/>
+            <line x1="23" y1="11" x2="23" y2="31" stroke="#85B7EB" stroke-width="4" stroke-linecap="round"/>
+            <line x1="23" y1="31" x2="10" y2="46" stroke="#B5D4F4" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="23" y1="31" x2="36" y2="46" stroke="#378ADD" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+          <span><span class="hero-brand-bold">theo</span><span class="hero-brand-light">lternative</span></span>
+          <span class="sr-only">theolternative — iOS Apps by Matteo Rossi</span>
+        </h1>
         <p>Practical, well-crafted apps. Fast, reliable, and always in your pocket.</p>
         <div class="hero-platforms">
           <span class="hero-platform">iPhone</span>
@@ -55,52 +68,100 @@
     <section class="section">
       <div class="container">
         <h2 class="section-title">Apps</h2>
-        <div class="app-cards">
-          <app-card
-            name="Steel Profiles"
-            slug="steel-profiles-free"
-            icon="/images/steel-profiles-free-icon.png"
-            screenshot="/images/screenshots/steel-profiles-free/iphone-2.png"
-            description="Browse 5,000+ steel sections from 6 international standards. Compare profiles, find equivalents, and calculate weights."
-            store-url="https://apps.apple.com/app/steel-profiles-free/id564614324"
-          ></app-card>
-          <app-card
-            name="Steel Profiles AISC"
-            slug="steel-profiles-aisc"
-            icon="/images/steel-profiles-aisc-icon.png"
-            screenshot="/images/screenshots/steel-profiles-aisc/iphone-2.png"
-            description="Complete AISC 14 steel section database with properties for W, S, M, HP, C, MC, L, WT, ST, MT, HSS, and Pipe shapes."
-            store-url="https://apps.apple.com/app/steel-profiles-aisc/id662511256"
-          ></app-card>
-          <app-card
-            name="WiFiPhoto"
-            slug="wifiphoto"
-            icon="/images/wifiphoto-icon.png"
-            screenshot="/images/screenshots/wifiphoto/iphone-1.png"
-            description="The fastest way to download full quality photos and videos from your iPhone or iPad to any computer over Wi-Fi. No cables needed."
-            store-url="https://apps.apple.com/app/wifiphoto/id328578837"
-          ></app-card>
-          <app-card
-            name="Livesick"
-            slug="livesick"
-            icon="/images/livesick-icon.png"
-            description="Relive every song of your favourite music events. Search artists, download setlists and create Apple Music playlists."
-            store-url="https://apps.apple.com/app/livesick/id1635028224"
-          ></app-card>
+        <div class="app-showcase-list">
+
+          <div class="app-showcase">
+            <div class="app-showcase-phone">
+              <div class="iphone-frame">
+                <div class="iphone-notch"></div>
+                <img src="/images/screenshots/steel-profiles-free/iphone-1.webp" alt="Steel Profiles screenshot">
+              </div>
+            </div>
+            <div class="app-showcase-info">
+              <div class="app-showcase-header">
+                <img src="/images/steel-profiles-free-icon.png" alt="Steel Profiles icon" class="app-showcase-icon">
+                <h3>Steel Profiles</h3>
+              </div>
+              <p>A comprehensive reference for structural engineers covering over 5,000 steel sections from six international standards — AISC, Euronorm, British, Canadian, and Australian/New Zealand. Compare up to 3 profiles side by side, find equivalent sections across standards, and calculate weights by project. Full geometry properties with cross-section drawings, all available offline on iPhone, iPad, and Mac.</p>
+              <div class="app-showcase-actions">
+                <a href="/apps/steel-profiles-free/" class="btn-learn-more">Learn more</a>
+                <a href="https://apps.apple.com/app/steel-profiles-free/id564614324" target="_blank" rel="noopener">
+                  <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-showcase app-showcase--reverse">
+            <div class="app-showcase-phone">
+              <div class="iphone-frame">
+                <div class="iphone-notch"></div>
+                <img src="/images/screenshots/steel-profiles-aisc/iphone-1.webp" alt="Steel Profiles AISC screenshot">
+              </div>
+            </div>
+            <div class="app-showcase-info">
+              <div class="app-showcase-header">
+                <img src="/images/steel-profiles-aisc-icon.png" alt="Steel Profiles AISC icon" class="app-showcase-icon">
+                <h3>Steel Profiles AISC</h3>
+              </div>
+              <p>The complete AISC 14 steel shapes database in both US Customary and SI units, with geometry, detailing, and design properties for every shape — W, S, M, HP, C, MC, L, WT, ST, MT, HSS, and Pipe. Look up any profile instantly, sort by properties, and convert values to any unit. Whether you're sizing beams at your desk or checking sections on-site, the data is always at hand with no internet required.</p>
+              <div class="app-showcase-actions">
+                <a href="/apps/steel-profiles-aisc/" class="btn-learn-more">Learn more</a>
+                <a href="https://apps.apple.com/app/steel-profiles-aisc/id662511256" target="_blank" rel="noopener">
+                  <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-showcase">
+            <div class="app-showcase-phone">
+              <div class="iphone-frame">
+                <div class="iphone-notch"></div>
+                <img src="/images/screenshots/wifiphoto/iphone-1.webp" alt="WiFiPhoto screenshot">
+              </div>
+            </div>
+            <div class="app-showcase-info">
+              <div class="app-showcase-header">
+                <img src="/images/wifiphoto-icon.png" alt="WiFiPhoto icon" class="app-showcase-icon">
+                <h3>WiFiPhoto</h3>
+              </div>
+              <p>The fastest way to download full quality photos and videos from your iPhone or iPad to any computer over Wi-Fi. Pick your photos, point your browser to the address displayed, and instantly download a zipped archive — no cables, no cloud, no compromise on quality. Streaming transfers start immediately with no wait, and auto-reconnect keeps the server running. Available on iPhone and iPad since 2009.</p>
+              <div class="app-showcase-actions">
+                <a href="/apps/wifiphoto/" class="btn-learn-more">Learn more</a>
+                <a href="https://apps.apple.com/app/wifiphoto/id328578837" target="_blank" rel="noopener">
+                  <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-showcase app-showcase--reverse">
+            <div class="app-showcase-phone">
+              <div class="iphone-frame">
+                <div class="iphone-notch"></div>
+                <img src="/images/screenshots/livesick/iphone-3.webp" alt="Livesick screenshot">
+              </div>
+            </div>
+            <div class="app-showcase-info">
+              <div class="app-showcase-header">
+                <img src="/images/livesick-icon.png" alt="Livesick icon" class="app-showcase-icon">
+                <h3>Livesick</h3>
+              </div>
+              <p>Relive every song of your favourite music events. Search for any artist, browse their concert history, and instantly create Apple Music playlists from real setlists — so you can experience the show again, track by track. Whether you just got back from a concert or want to revisit a legendary performance, Livesick matches each song to Apple Music and lets you play or save the full playlist.</p>
+              <div class="app-showcase-actions">
+                <a href="/apps/livesick/" class="btn-learn-more">Learn more</a>
+                <a href="https://apps.apple.com/app/livesick/id1635028224" target="_blank" rel="noopener">
+                  <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="section intro-section">
-      <div class="container">
-        <div class="intro">
-          <h2 class="section-title">About</h2>
-          <p>
-            theolternative is an independent software studio by Matteo Rossi, focused on building native apps for Apple platforms. We design and develop for iPhone, iPad, and Mac using Swift and the latest Apple frameworks — prioritizing performance, clean interfaces, and a great user experience.
-          </p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <site-footer></site-footer>
