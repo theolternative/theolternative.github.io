@@ -17,7 +17,12 @@ Revamp of website www.theolternative.com
 * `js/components.js` — Web Components (`<site-header>`, `<site-footer>`, `<app-card>`)
 * `images/` — App icons, favicons, and PWA icons
 * `images/screenshots/<slug>/` — App Store screenshots (iPhone, iPad and, for Steel Profiles, Mac at 1440×900) in WebP format; `.screenshot-ipad` / `.screenshot-mac` classes size landscape images
-* `sitemap.xml` — Sitemap for search engines
+* `steel-sections/` — Generated reference pages (do not edit by hand): `index.html`, one index per library (`eu/`, `uk/`), one table page per series (`eu/hea/`) and one page per hot-rolled section (`eu/hea/hea-200/`) with an SVG drawing and the free "Dimensions" group of the app. Hollow sections only get series tables; UK hollow sections are skipped (same EN 10210/10219 data as EU). Regenerate with `python3 tools/generate_steel_sections.py` (reads `tools/data/sections-dimensions.json`, a trimmed export of the app catalog; pass the full `sections.json` export from the app repo as an argument to refresh the trimmed copy). The script also rewrites `sitemap.xml` and the data-driven guide `guides/hea-heb-hem/`
+* `guides/<slug>/index.html` — Hand-written reference articles (bolt resistances, W shape designation, steel grade equivalents); `guides/hea-heb-hem/` is generated
+* `apps/steel-profiles-free/whats-new/` — Release notes page (not a blog: one page, newest release first)
+* Reference-page CSS lives at the end of `css/style.css` (`.crumbs`, `.spec-table`, `.section-figure`, `.series-grid`, `.series-links`, `.cta-card`, `.article`)
+* App Store links on EU pages carry `?ppid=65391258-…` (Eurocode custom product page) and on AISC pages `?ppid=c5461109-…` (AISC custom product page); the default page is shown if the custom page is unavailable
+* `sitemap.xml` — Sitemap for search engines (rewritten by the generator)
 * `robots.txt` — Crawler directives
 * `site.webmanifest` — Web app manifest with icon references
 * `CNAME` — GitHub Pages custom domain

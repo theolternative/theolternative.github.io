@@ -52,6 +52,7 @@ class SiteFooter extends HTMLElement {
           </div>
           <nav>
             <a href="/">Home</a>
+            <a href="/steel-sections/">Steel Sections</a>
             <a href="/about/">About</a>
             <a href="/support/">Support</a>
             <a href="/privacy/">Privacy</a>

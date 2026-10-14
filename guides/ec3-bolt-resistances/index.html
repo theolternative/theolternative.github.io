@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolt resistances to Eurocode 3 — theolternative</title>
+  <meta name="description" content="Shear, tension and preload resistances of M12 to M36 structural bolts in classes 8.8 and 10.9 to EN 1993-1-8, with the formulas, the tensile stress areas and the hole diameters of EN 1090-2.">
+  <link rel="canonical" href="https://theolternative.com/guides/ec3-bolt-resistances/">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1a1a1e">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theolternative.com/guides/ec3-bolt-resistances/">
+  <meta property="og:title" content="Bolt resistances to Eurocode 3 — theolternative">
+  <meta property="og:description" content="Shear, tension and preload resistances of M12 to M36 bolts in classes 8.8 and 10.9 to EN 1993-1-8, with formulas and hole sizes.">
+  <meta property="og:image" content="https://theolternative.com/images/steel-profiles-free-icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bolt resistances to Eurocode 3 — theolternative">
+  <meta name="twitter:description" content="Shear, tension and preload resistances of M12 to M36 bolts in classes 8.8 and 10.9 to EN 1993-1-8, with formulas and hole sizes.">
+  <meta name="twitter:image" content="https://theolternative.com/images/steel-profiles-free-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/components.js" defer></script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Guides", "item": "https://theolternative.com/steel-sections/"},
+    {"@type": "ListItem", "position": 2, "name": "Bolt resistances to Eurocode 3", "item": "https://theolternative.com/guides/ec3-bolt-resistances/"}]}
+  </script>
+</head>
+<body data-theme="steel-dark">
+  <site-header></site-header>
+
+  <main>
+    <div class="container">
+
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/steel-sections/">Guides</a> <span aria-hidden="true">›</span> <span aria-current="page">Bolt resistances to Eurocode 3</span></nav>
+      <div class="product-hero article-hero">
+        <div class="product-meta">
+          <h1>Bolt resistances to Eurocode 3</h1>
+          <p class="subtitle">Shear, tension and preload of M12 to M36 bolts in classes 8.8 and 10.9, EN 1993-1-8 Table 3.4</p>
+        </div>
+      </div>
+
+      <div class="product-section article">
+        <p>EN 1993-1-8 gives the design resistance of a single bolt in a bearing-type connection with three formulas and one partial factor, γ<sub>M2</sub> = 1.25 (recommended value, confirmed by most National Annexes). The values below are computed from them for the common structural sizes and classes; for the bearing resistance, which depends on the plate and the bolt spacing, and for slip-resistant connections, use the Bolts tool in <a href="/apps/steel-profiles-free/">Steel Profiles</a>.</p>
+
+        <h2>Formulas</h2>
+        <ul class="plain">
+          <li><strong>Shear per shear plane</strong>: F<sub>v,Rd</sub> = α<sub>v</sub> f<sub>ub</sub> A / γ<sub>M2</sub>. With the threads in the shear plane A is the tensile stress area A<sub>s</sub> and α<sub>v</sub> = 0.6 for classes 4.6, 5.6 and 8.8, 0.5 for class 10.9. With the shank in the shear plane A is the gross area and α<sub>v</sub> = 0.6 for every class.</li>
+          <li><strong>Tension</strong>: F<sub>t,Rd</sub> = k<sub>2</sub> f<sub>ub</sub> A<sub>s</sub> / γ<sub>M2</sub>, with k<sub>2</sub> = 0.9 (0.63 for countersunk bolts).</li>
+          <li><strong>Combined shear and tension</strong>: F<sub>v,Ed</sub> / F<sub>v,Rd</sub> + F<sub>t,Ed</sub> / (1.4 F<sub>t,Rd</sub>) ≤ 1.0.</li>
+          <li><strong>Preload</strong> (classes 8.8 and 10.9 only, EN 14399 assemblies): F<sub>p,C</sub> = 0.7 f<sub>ub</sub> A<sub>s</sub>. The slip resistance per bolt is then F<sub>s,Rd</sub> = k<sub>s</sub> n μ F<sub>p,C</sub> / γ<sub>M3</sub> with γ<sub>M3</sub> = 1.25 at ultimate (1.1 at serviceability), μ = 0.5 for class A surfaces down to 0.2 for class D.</li>
+        </ul>
+        <p>f<sub>ub</sub> is 800 MPa for class 8.8 and 1,000 MPa for class 10.9 (400 and 500 MPa for 4.6 and 5.6). The bolt must also be checked for bearing on the plate: F<sub>b,Rd</sub> = k<sub>1</sub> α<sub>b</sub> f<sub>u</sub> d t / γ<sub>M2</sub>, which usually governs with thin plates or small end distances.</p>
+
+        <h2>Design resistances per bolt</h2>
+        <p>Threads in the shear plane, one shear plane, kN. Hole diameter d<sub>0</sub> is the normal round hole of EN 1090-2 (d + 1 mm up to M14, d + 2 mm from M16 to M24, d + 3 mm from M27).</p>
+        <div class="table-scroll">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th scope="col">Bolt</th>
+                <th scope="col">A<sub>s</sub><span class="unit"> mm²</span></th>
+                <th scope="col">d<sub>0</sub><span class="unit"> mm</span></th>
+                <th scope="col">F<sub>v,Rd</sub> 8.8<span class="unit"> kN</span></th>
+                <th scope="col">F<sub>v,Rd</sub> 10.9<span class="unit"> kN</span></th>
+                <th scope="col">F<sub>t,Rd</sub> 8.8<span class="unit"> kN</span></th>
+                <th scope="col">F<sub>t,Rd</sub> 10.9<span class="unit"> kN</span></th>
+                <th scope="col">F<sub>p,C</sub> 8.8<span class="unit"> kN</span></th>
+                <th scope="col">F<sub>p,C</sub> 10.9<span class="unit"> kN</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">M12</th><td>84.3</td><td>13</td><td>32.4</td><td>33.7</td><td>48.6</td><td>60.7</td><td>47.2</td><td>59.0</td></tr>
+              <tr><th scope="row">M16</th><td>157</td><td>18</td><td>60.3</td><td>62.8</td><td>90.4</td><td>113.0</td><td>87.9</td><td>109.9</td></tr>
+              <tr><th scope="row">M20</th><td>245</td><td>22</td><td>94.1</td><td>98.0</td><td>141.1</td><td>176.4</td><td>137.2</td><td>171.5</td></tr>
+              <tr><th scope="row">M22</th><td>303</td><td>24</td><td>116.4</td><td>121.2</td><td>174.5</td><td>218.2</td><td>169.7</td><td>212.1</td></tr>
+              <tr><th scope="row">M24</th><td>353</td><td>26</td><td>135.6</td><td>141.2</td><td>203.3</td><td>254.2</td><td>197.7</td><td>247.1</td></tr>
+              <tr><th scope="row">M27</th><td>459</td><td>30</td><td>176.3</td><td>183.6</td><td>264.4</td><td>330.5</td><td>257.0</td><td>321.3</td></tr>
+              <tr><th scope="row">M30</th><td>561</td><td>33</td><td>215.4</td><td>224.4</td><td>323.1</td><td>403.9</td><td>314.2</td><td>392.7</td></tr>
+              <tr><th scope="row">M36</th><td>817</td><td>39</td><td>313.7</td><td>326.8</td><td>470.6</td><td>588.2</td><td>457.5</td><td>571.9</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>With the shank in the shear plane the shear resistance rises to 0.6 f<sub>ub</sub> A / γ<sub>M2</sub> on the gross area: 120.6 kN for an M20 8.8 and 150.8 kN for an M20 10.9. Note that a 10.9 bolt gains little in shear through the threads over an 8.8 (α<sub>v</sub> drops to 0.5) but 25 % in tension and preload.</p>
+
+        <h2>Reading the table</h2>
+        <ul class="plain">
+          <li>A double shear connection (bolt through three plates) has two shear planes: multiply F<sub>v,Rd</sub> by 2.</li>
+          <li>The resistances are design values: compare them with factored actions (F<sub>Ed</sub>), not with working loads.</li>
+          <li>Minimum spacing and edge distances of Table 3.3: end distance e<sub>1</sub> ≥ 1.2 d<sub>0</sub>, edge distance e<sub>2</sub> ≥ 1.2 d<sub>0</sub>, pitch p<sub>1</sub> ≥ 2.2 d<sub>0</sub>, gauge p<sub>2</sub> ≥ 2.4 d<sub>0</sub>. The usual detailing values are 1.5 d<sub>0</sub> for edges and 3 d<sub>0</sub> for pitch, which also gives the full bearing factor α<sub>b</sub>.</li>
+          <li>Oversize and slotted holes reduce the slip resistance (k<sub>s</sub> = 0.85 to 0.63) and need a hardened washer.</li>
+          <li>National Annexes may change γ<sub>M2</sub> and γ<sub>M3</sub>: check the one that applies to the project.</li>
+        </ul>
+
+        <h2>In the app</h2>
+        <p>The Bolts tool of Steel Profiles lists M8 to M64 with the ISO 4014 head, ISO 4032 nut and ISO 7089 washer dimensions, the EN 14399 HV dimensions for M12 to M36 and the EN 1090-2 hole clearances, and computes shear, tension, punching shear, bearing (with your plate grade, thickness and end distance) and slip resistance for every class and surface. The imperial side covers 1/2" to 1 1/2" A307, A325 and A490 bolts to AISC 360 Tables J3.1 to J3.4 in LRFD and ASD. Results are design aids and must be verified by a qualified engineer.</p>
+      </div>
+
+      <div class="product-section">
+        <div class="product-card cta-card">
+          <h2>Bolts, sections and design checks in one app</h2>
+          <p>The Bolts and Materials tools are free in Steel Profiles on iPhone, iPad and Mac. Section properties and design checks to Eurocode 3 and AISC 360 come with the libraries.</p>
+          <div class="cta-actions">
+            <a href="https://apps.apple.com/app/steel-profiles/id564614324?ppid=65391258-17f5-4ae3-b4a6-cfd67004c5dd" target="_blank" rel="noopener">
+              <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store">
+            </a>
+            <a href="/apps/steel-profiles-free/" class="btn-learn-more">About Steel Profiles</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-section">
+        <h2>More guides</h2>
+        <div class="series-links">
+          <a href="/guides/hea-heb-hem/">HEA vs HEB vs HEM</a>
+          <a href="/guides/w-shape-designation/">How AISC W shapes are designated</a>
+          <a href="/guides/steel-grade-equivalents/">Steel grade equivalents</a>
+          <a href="/steel-sections/">Steel section tables</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>
