@@ -645,7 +645,8 @@ header.site-header nav a[aria-current="page"] {
   transform: scale(1.02);
 }
 
-.screenshots img.screenshot-ipad {
+.screenshots img.screenshot-ipad,
+.screenshots img.screenshot-mac {
   height: 320px;
 }
 

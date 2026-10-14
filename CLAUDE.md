@@ -16,7 +16,7 @@ Revamp of website www.theolternative.com
 * `css/style.css` — Single stylesheet using CSS custom properties
 * `js/components.js` — Web Components (`<site-header>`, `<site-footer>`, `<app-card>`)
 * `images/` — App icons, favicons, and PWA icons
-* `images/screenshots/<slug>/` — App Store screenshots (iPhone and iPad) in WebP format
+* `images/screenshots/<slug>/` — App Store screenshots (iPhone, iPad and, for Steel Profiles, Mac at 1440×900) in WebP format; `.screenshot-ipad` / `.screenshot-mac` classes size landscape images
 * `sitemap.xml` — Sitemap for search engines
 * `robots.txt` — Crawler directives
 * `site.webmanifest` — Web app manifest with icon references
@@ -39,6 +39,6 @@ Revamp of website www.theolternative.com
 
 ## Current Apps
 * **Livesick** — slug: `livesick`, App Store ID: `id1635028224`
-* **Steel Profiles AISC** — slug: `steel-profiles-aisc`, App Store ID: `id662511256`
+* **Steel Profiles Pro** (formerly Steel Profiles AISC, renamed Oct 2026) — slug: `steel-profiles-pro`, App Store ID: `id662511256`; `apps/steel-profiles-aisc/` is a meta-refresh redirect to it. Its screenshots are the free app's (`images/screenshots/steel-profiles-free/`): same UI
 * **Steel Profiles** (formerly Steel Profiles Free) — slug: `steel-profiles-free`, App Store ID: `id564614324`
 * **WiFiPhoto** — slug: `wifiphoto`, App Store ID: `id328578837`
