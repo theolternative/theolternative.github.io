@@ -906,7 +906,7 @@ def guide_hea_heb_hem(by_name):
 
 STATIC_URLS = [
     ("/", "1.0"), ("/about/", "0.5"), ("/support/", "0.3"), ("/privacy/", "0.3"),
-    ("/apps/livesick/", "0.8"), ("/apps/steel-profiles-pro/", "0.8"), ("/apps/steel-profiles-free/", "0.8"),
+    ("/apps/livesick/", "0.8"), ("/apps/steel-profiles-pro/", "0.8"), ("/apps/steel-profiles-pro/teams/", "0.7"), ("/apps/steel-profiles-free/", "0.8"),
     ("/apps/steel-profiles-free/whats-new/", "0.6"), ("/apps/wifiphoto/", "0.8"),
     ("/guides/hea-heb-hem/", "0.7"), ("/guides/w-shape-designation/", "0.7"),
     ("/guides/ec3-bolt-resistances/", "0.7"), ("/guides/steel-grade-equivalents/", "0.7"),
